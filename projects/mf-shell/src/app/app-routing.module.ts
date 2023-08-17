@@ -5,11 +5,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('mfShopping/ProductsModule').then((m) => m.ProductsModule)
+      import('mfShopping/ProductModule').then((m) => m.ProductsModule)
   },
   {
     path: 'payment',
-    loadChildren: () =>
+    loadComponent: () =>
       import('mfPayment/PaymentComponent').then((c) => c.PaymentComponent)
   }
 ];
