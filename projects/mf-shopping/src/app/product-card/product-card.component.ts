@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { CommonsLibService } from '@commons-lib';
 
 import { IProductCard } from '../models/product-card.interface';
-import { CommonsLibService } from '../../../../commons-lib/src/lib/commons-lib.service';
+
 
 @Component({
   standalone: true,
